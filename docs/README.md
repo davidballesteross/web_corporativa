@@ -1,4 +1,4 @@
-# Web Corporativa de [ballesteros bitlogic]
+# Web Corporativa de [FoodLogistic]
 
 Aquesta és la web corporativa de [Nom de l'Empresa], una empresa fictícia dedicada a [descripció breu de l'empresa] dins el mòdul *Projecte Intermodular*.
 
