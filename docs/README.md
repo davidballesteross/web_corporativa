@@ -4,7 +4,7 @@ Aquesta és la web corporativa de [Nom de l'Empresa], una empresa fictícia dedi
 
 ## Demostració
 
-[🌐 URL de la web](https://github.com/davidballesteross/web_corporativa])
+[🌐 URL de la web](https://davidballesteross.github.io/web_corporativa/])
 
 ## Tecnologies Utilitzades
 
