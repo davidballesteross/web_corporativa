@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ballesteros BitLogic | Futur Tecnològic</title>
+    <title>FoodLogic | Futur Tecnològic</title>
     <style>
         :root {
             --bg-dark: #0a0b10;
@@ -268,7 +268,7 @@
 
     <header>
         <nav>
-            <a href="#" class="logo">B. BitLogic</a>
+            <a href="#" class="logo">FoodLogic</a>
             <ul class="nav-links">
                 <li><a href="#inici">Inici</a></li>
                 <li><a href="#serveis">Serveis</a></li>
@@ -280,7 +280,7 @@
 
     <main>
         <section id="inici">
-            <h1>BALLESTEROS BITLOGIC</h1>
+            <h1>FOODLOGIC</h1>
             <p class="hero-p">Arquitectures digitals d'avantguarda. Transformem el codi en el futur del teu negoci.</p>
             <a href="#serveis" class="btn-submit" style="text-decoration: none; width: auto;">Explorar el futur</a>
         </section>
@@ -290,114 +290,3 @@
             <div class="grid-serveis">
                 <div class="card">
                     <h3>Intel·ligència Artificial</h3>
-                    <p>Implementació d'algoritmes d'aprenentatge profund per a l'automatització industrial.</p>
-                </div>
-                <div class="card">
-                    <h3>Arquitectura Cloud</h3>
-                    <p>Sistemes escalables en el núvol amb seguretat quàntica i alta disponibilitat.</p>
-                </div>
-                <div class="card">
-                    <h3>Blockchain Hub</h3>
-                    <p>Desenvolupament de Smart Contracts i ecosistemes descentralitzats per a finances 4.0.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="sobre-nosaltres">
-            <h2>Sobre la Lògica</h2>
-            <div class="sobre-content">
-                <div class="text-block">
-                    <p>A Ballesteros BitLogic no només escrivim codi; dissenyem els fonaments de la pròxima era tecnològica. Amb un enfocament radical en la innovació, ajudem a les empreses a transcendir les barreres de l'entorn digital actual.</p>
-                    <br>
-                    <p>El nostre equip de data scientists i enginyers de programari treballa en la intersecció de l'eficiència i el disseny futurista.</p>
-                </div>
-                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80" alt="Tecnologia" class="sobre-img">
-            </div>
-        </section>
-
-        <section id="contacte">
-            <h2>Connexió Directa</h2>
-            <div class="contact-container">
-                <form id="bitlogic-form">
-                    <div class="form-group">
-                        <label>Nom</label>
-                        <input type="text" id="nom" required placeholder="Escriu el teu nom">
-                    </div>
-                    <div class="form-group">
-                        <label>Correu electrònic</label>
-                        <input type="email" id="email" required placeholder="nom@empresa.com">
-                    </div>
-                    <div class="form-group">
-                        <label>Telèfon de contacte</label>
-                        <input type="tel" id="telefon" placeholder="+34 000 000 000">
-                    </div>
-                    <div class="form-group">
-                        <label>Missatge</label>
-                        <textarea id="missatge" placeholder="Explica'ns el teu projecte..."></textarea>
-                    </div>
-                    <button type="submit" class="btn-submit">Iniciar Transmissió</button>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Ballesteros BitLogic. Desbloquejant el potencial del bit.</p>
-    </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            
-            // 1. Efecte de revelació en fer scroll
-            const sections = document.querySelectorAll('section');
-            const observerOptions = {
-                threshold: 0.1
-            };
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.opacity = '1';
-                        entry.target.style.transform = 'translateY(0)';
-                    }
-                });
-            }, observerOptions);
-
-            sections.forEach(section => {
-                section.style.opacity = '0';
-                section.style.transform = 'translateY(50px)';
-                section.style.transition = 'all 0.8s ease-out';
-                observer.observe(section);
-            });
-
-            // 2. Gestió del Formulari
-            const form = document.getElementById('bitlogic-form');
-            form.addEventListener('submit', (e) => {
-                e.preventDefault();
-                
-                // Animació de feedback
-                const btn = form.querySelector('.btn-submit');
-                const originalText = btn.innerText;
-                
-                btn.innerText = 'ENVIANT...';
-                btn.style.background = 'var(--accent)';
-                
-                setTimeout(() => {
-                    alert('Gràcies per connectar amb BitLogic. Hem rebut les teves dades correctament.');
-                    btn.innerText = originalText;
-                    btn.style.background = 'linear-gradient(45deg, var(--primary), var(--secondary))';
-                    form.reset();
-                }, 1500);
-            });
-
-            // 3. Efecte de parallax suau al logo
-            const logo = document.querySelector('.logo');
-            document.addEventListener('mousemove', (e) => {
-                const moveX = (e.clientX - window.innerWidth / 2) * 0.01;
-                const moveY = (e.clientY - window.innerHeight / 2) * 0.01;
-                logo.style.transform = `translate(${moveX}px, ${moveY}px)`;
-            });
-        });
-    </script>
-</body>
-</html>
