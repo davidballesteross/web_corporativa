@@ -1,6 +1,6 @@
-# Web Corporativa de [FoodLogistic]
+# Web Corporativa de FoodLogistic
 
-Aquesta és la web corporativa de [Nom de l'Empresa], una empresa fictícia dedicada a [descripció breu de l'empresa] dins el mòdul *Projecte Intermodular*.
+Aquesta és la web corporativa de Ballesteros Bitlogistic, una empresa fictícia dedicada a [descripció breu de l'empresa] dins el mòdul *Projecte Intermodular*.
 
 ## Demostració
 
